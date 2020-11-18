@@ -3,27 +3,7 @@
    {
       "name": "get catch",
       "setup": "",
-      "run": "wget https://raw.githubusercontent.com/catchorg/Catch2/devel/extras/catch_amalgamated.hpp",
-      "input": "",
-      "output": "",
-      "comparison": "included",
-      "timeout": 20,
-      "points": null
-    },
-    {
-      "name": "get catch source ",
-      "setup": "",
-      "run": "wget https://raw.githubusercontent.com/catchorg/Catch2/devel/extras/catch_amalgamated.cpp",
-      "input": "",
-      "output": "",
-      "comparison": "included",
-      "timeout": 20,
-      "points": null
-    },
-    {
-      "name": "rename catch",
-      "setup": "",
-      "run": "cp catch_amalgamated.hpp catch.hpp",
+      "run": "wget https://gist.githubusercontent.com/ran-research-lab/e25c5edb7a6e157398e8c22536dfc4be/raw/f75ed2cc47a1cd85362e51a40d2d80ba7a0c7fad/catch.hpp",
       "input": "",
       "output": "",
       "comparison": "included",
