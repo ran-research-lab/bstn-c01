@@ -54,7 +54,7 @@ public:
     void insert(int k);
 
     // Remove a record from the tree
-    void remove(int k) { remove(k, root);  nodecount++; }
+    void remove(int k) { remove(k, root);  nodecount--; }
 
     string toString() const;
 

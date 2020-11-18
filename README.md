@@ -1,4 +1,3 @@
-# AStack
+# BSTN
 
-An implementation of the Stack ADT using single linked list, in the style
-of the OpenDSA book.
+An implementation of the binary search tree using linked nodes.

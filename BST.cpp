@@ -88,7 +88,6 @@ void BSTN::remove(int k, BTNode *r) {
     while (cur) { // Search for node
         if (cur->key == k) { // Node found
             if (cur->left == NULL && cur->right == NULL) {        // Remove leaf
-                cout << "cur is a leaf: " << cur->key << endl;
                 if (!parent) { // Node is root
                     root = NULL;
                 }

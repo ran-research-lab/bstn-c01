@@ -24,15 +24,4 @@ TEST_CASE( "Pushing and popping to the AStack", "[AStack]" ) {
     B.insert(42);
     cout << B.toString() << endl;
 
-
-
-//	LStack S(20);
-//	for(int i = 0; i < 10; i++) S.push(i*10);
-//    CHECK( S.toString() == "90 80 70 60 50 40 30 20 10 0 ");
-//    int ctr = 0;
-//    while(!S.isEmpty()) {
-//        S.pop();
-//        ctr++;
-//    }
-//    CHECK( ctr == 10);
 }
