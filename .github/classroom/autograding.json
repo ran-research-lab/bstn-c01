@@ -13,7 +13,7 @@
     {
       "name": "get catch source ",
       "setup": "",
-      "run": "https://raw.githubusercontent.com/catchorg/Catch2/devel/extras/catch_amalgamated.cpp",
+      "run": "wget https://raw.githubusercontent.com/catchorg/Catch2/devel/extras/catch_amalgamated.cpp",
       "input": "",
       "output": "",
       "comparison": "included",
