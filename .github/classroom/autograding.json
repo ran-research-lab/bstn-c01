@@ -3,7 +3,27 @@
    {
       "name": "get catch",
       "setup": "",
-      "run": "wget https://raw.githubusercontent.com/catchorg/Catch2/master/single_include/catch2/catch.hpp",
+      "run": "wget https://raw.githubusercontent.com/catchorg/Catch2/devel/extras/catch_amalgamated.hpp",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 20,
+      "points": null
+    },
+    {
+      "name": "get catch source ",
+      "setup": "",
+      "run": "https://raw.githubusercontent.com/catchorg/Catch2/devel/extras/catch_amalgamated.cpp",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 20,
+      "points": null
+    },
+    {
+      "name": "rename catch",
+      "setup": "",
+      "run": "cp catch_amalgamated.hpp catch.hpp",
       "input": "",
       "output": "",
       "comparison": "included",
