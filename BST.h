@@ -32,16 +32,34 @@ private:
     void remove(int k, BTNode *r);
     BTNode* searchRec( int k, BTNode *root) const;
     void toString(string &st, BTNode *cur, int dist) const;
-
+    void inOrder(BTNode *r, string &st) const;
 public:
 
     BSTN() { root = NULL; nodecount = 0; }
 
+    // Given a key k, returns a pointer to the node, if found,
+    // otherwise returns NULL
     BTNode* search(int k) const;
+
+    // Given a key k, returns a pointer to the node, if found,
+    // otherwise returns NULL. Uses a recursive search algorithm.
     BTNode* recSearch(int k) const {
         return searchRec(k, root);
     }
 
+    // This is the helper function that calls the actual recursive inOrder
+    // function.
+    string inOrder() const {
+        string st;
+        inOrder(root, st);
+        return st;
+    }
+
+    // Given a key, returns the key of the succesor in the tree (if found).
+    // If the key is not found, or has no successor, returns -1.
+    int successor(int k) const;
+
+    // Deletes all the nodes
     void clear();
 
     // Insert a key into the tree.

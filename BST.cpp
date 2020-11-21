@@ -139,6 +139,35 @@ void BSTN::remove(int k, BTNode *r) {
     return; // Node not found
 }
 
+void BSTN::inOrder(BTNode *r, string &st) const {
+    if (r) {
+        inOrder(r->left, st);
+        st = st + to_string(r->key) + " ";
+        inOrder(r->right, st);
+    }
+}
+
+
+
+int BSTN::successor(int k) const {
+    BTNode* cur = root;
+    int lastKeyTurnLeft = -1;
+    while (cur) {
+        if (k < cur->key)      { lastKeyTurnLeft = cur->key; cur = cur->left;   }
+        else if (k > cur->key) { cur = cur->right; }
+        else {
+            // once we find the node, if it does not have a right subtree.
+            // we return the key of the last node where we turned left
+            if( cur->right == NULL) return lastKeyTurnLeft;
+
+            // else we return the leftmost key in the right subtree
+            cur = cur->right;
+            while(cur->left) cur = cur->left;
+            return cur->key;
+        }
+    }
+    return -1;
+}
 
 string BSTN::toString() const {
     string st;
