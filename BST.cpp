@@ -179,7 +179,7 @@ void BSTN::toString(string &st, BTNode *cur, int dist) const{
     if (cur) {
         if (cur->right) toString(st, cur->right, dist + 1);
         for (int i = 0; i < dist; i++) st += "    ";
-        st = st + to_string(cur->key) + "\n";
+        st = st + to_string(cur->key)  + "\n";
         if (cur->left) toString(st, cur->left, dist + 1);
     }
 }
